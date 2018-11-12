@@ -1,0 +1,49 @@
+#page1.gwd-play-animation .gwd-motion-path-1s31-anim-x {
+  --gwd-motion-path: {
+    "tangentFollowing": false, "sections": [ {
+      "controlPoints": ["-50px", "-99px", "-49.67px", "-78px", "-49.33px", "-57px", "-49px", "-36px"], "startTimeMs": 0, "endTimeMs": 1000, "easing": "linear"
+    }
+    , {
+      "controlPoints": ["-49px", "-36px", "-49.33px", "-24px", "-49.67px", "-12px", "-50px", "0px"], "startTimeMs": 1000, "endTimeMs": 2000, "easing": "linear"
+    }
+    ], "positionTol":0.5, "angleTol":1, "optimizationLevel":0
+  }
+  ;
+  animation:gwd-motion-path-1s31-keys-x 2s linear 0s 1 normal forwards;
+  transform:translate3d(-50px, 0px, 0px);
+}
+@keyframes gwd-motion-path-1s31-keys-x {
+  0% {
+    transform: translate3d(-50px, 0px, 0px);
+  }
+  50% {
+    transform: translate3d(-49px, 0px, 0px);
+  }
+  100% {
+    transform: translate3d(-50px, 0px, 0px);
+  }
+}
+#page1.gwd-play-animation .gwd-motion-path-1s31-anim-y {
+  animation: gwd-motion-path-1s31-keys-y 2s linear 0s 1 normal forwards;
+  transform: translate3d(0px, -99px, 0px);
+}
+@keyframes gwd-motion-path-1s31-keys-y {
+  0% {
+    transform: translate3d(0px, -99px, 0px);
+  }
+  50% {
+    transform: translate3d(0px, -36px, 0px);
+  }
+  100% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+[data-gwd-motion-path-node] {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  pointer-events: none;
+}
